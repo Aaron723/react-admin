@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import {HashRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Login from "./views/login/index";
-
+import Index from "./views/index/Index";
+import PrivateRouter from "./components/privateRouter/Index";
 
 class App extends Component {
     constructor(props) {
@@ -12,11 +13,12 @@ class App extends Component {
     render() {
         return (
             <div className="test">
-                <HashRouter>
+                <BrowserRouter>
                     <Switch>
-                        <Route component={Login} exact path="/"/>
+                        <Route render={() => <Login />} exact path="/"/>
+                        <PrivateRouter component={Index} path="/index" />
                     </Switch>
-                </HashRouter>
+                </BrowserRouter>
             </div>
 
         );

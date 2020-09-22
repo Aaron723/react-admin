@@ -1,4 +1,6 @@
-export const VALIDATE_PASSWORD = /^[\w]{6,20}$/
+//regex
+export const reg_password = /^[\w]{6,20}$/
+// const reg_password = /^[\w]{6,20}$/
 const reg_email = /^([a-zA-Z]|[0-9])(\w|-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
 // const validatePassword = ({getFieldValue}) => ({
 //     validator(rule, value) {
@@ -20,4 +22,8 @@ const reg_email = /^([a-zA-Z]|[0-9])(\w|-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
 //验证邮箱
 export const validate_email = (value) => {
     return reg_email.test(value);
+}
+//验证密码
+export const validate_password = (value) => {
+    return reg_password.test(value);
 }

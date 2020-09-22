@@ -4,3 +4,26 @@
 body {
   background-color: #001529 !important;
 }
+
+.inline-button {
+  button + button {
+    margin-left: 10px;
+  }
+}
+.table-wrap {
+  margin-top: 30px;
+}
+.text-center {
+  text-align: center;
+}
+.color-red {
+  color: #ff0000;
+}
+//向右侧浮动
+.pull-right {
+  float: right;
+}
+//间隔30px
+.space-30 {
+  margin-top: 30px;
+}

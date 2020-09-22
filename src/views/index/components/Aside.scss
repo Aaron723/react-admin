@@ -1,0 +1,43 @@
+.logo {
+  width: 250px;
+  float: left;
+  margin-left: -50px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  background-color: #001529;
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  span {
+    display: block;
+    width: 177px;
+    height: 47px;
+    background-color: #1a2d3f;
+  }
+}
+
+.collapsed-close {
+  .logo {
+    width: 80px;
+    span {
+      width: 100%;
+    }
+  }
+  .header-wrap {
+    margin-left: 65px;
+  }
+}
+
+
+.header-wrap {
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  margin-left: 220px;
+}
+
+.collapsed-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
